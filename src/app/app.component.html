@@ -1,0 +1,43 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu menuId="m1" contentId="main-content" type="overlay">
+      <ion-header *ngIf="usuarioMenu !== ''; else sinHeaderUsuario">
+        <ion-toolbar>
+          <ion-list>
+            <ion-item>
+              <div class="box-custom-avatar"></div>
+              <ion-label color="light" id="titleMenu">
+                <h2>{{usuarioMenu}}</h2>
+                <p>CUIT / CUIL: {{cuitMenu}}</p>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-toolbar>
+      </ion-header>
+
+      <ng-template #sinHeaderUsuario>
+        <ion-header>
+          <ion-toolbar>
+            <ion-title color="light" id="titleMenu">Menú</ion-title>
+          </ion-toolbar>
+        </ion-header>
+      </ng-template>
+
+      <ion-content>
+        <ion-list>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of pages">
+            <ion-item *ngIf="p.status === 'true'" (click)="openPage(p)">
+              <ion-icon [name]="p.icon" slot="start"></ion-icon>
+              <ion-label>{{p.title}}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+
+      <ion-footer id="footerMenuDgr">
+      </ion-footer>
+    </ion-menu>
+
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>
