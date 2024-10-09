@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>novedades</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list style="padding-bottom: 55px;">
+    <div *ngIf="items?.length > 0; else sinReg">
+      <ion-item style="border-top:none;border-bottom:0px;" *ngFor="let data of items" (click)="getInfoNovedad(data)">
+        <ion-avatar item-start>
+          <div id="boxFecha">
+            <span style="font-size:0.8em">
+              {{(data.fecha)?.substring(0,5)}}
+            </span>
+          </div>
+        </ion-avatar>
+        <h2 style="white-space: normal;">
+          {{data.titulo}}
+        </h2>
+        <p>
+          {{data.fecha}}
+        </p>
+      </ion-item>
+    </div>
+
+    <ng-template #sinReg>
+      <ion-grid>
+        <ion-row justify-content-center align-items-center
+          style="font-size: 1.4em;font-weight: 500;padding: 5px;text-align: center;">
+          <img src="assets/iconos/notif_ok.png" style="width:90px;margin-top:50px;">
+        </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row justify-content-center align-items-center
+          style="margin-top:20px;font-size: 1.4em;font-weight: 500;padding: 5px;text-align: center;">
+          ¡Sin Novedades!
+        </ion-row>
+      </ion-grid>
+    </ng-template>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,109 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>ayuda</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">ayuda</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card (click)='webTDR()'>
+    <ion-card-header style="font-weight: bold;">
+      Clave de Acceso Virtual
+    </ion-card-header>
+    <ion-card-content style="padding: 0px 16px 16px;">
+      <div>
+        Si olvidó su Clave de Acceso Virtual o su cuenta está bloqueada ingrese aquí
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header style="font-weight: bold;">
+      Mesa de Ayuda
+    </ion-card-header>
+    <ion-card-content style="padding: 0px 16px 16px;">
+      Comuníquese con Mesa de Ayuda de lunes a viernes de 07:30 a 18:00 hs.
+      <ion-grid style="padding-left:0px;padding-right:0px;">
+        <ion-row>
+          <ion-col style="padding-left:0px;">
+            <a href="tel:08005557376" style="text-decoration: none;">
+              <div style="font-weight: bold;" ion-text color="primary">
+                0800-555-7376
+              </div>
+            </a>
+            <span style="font-size:0.9em;">
+              Provincia de Corrientes
+            </span>
+          </ion-col>
+          <ion-col style="padding-right:0px;">
+            <a href="tel:08105557376" style="text-decoration: none;">
+              <div style="font-weight: bold;" ion-text color="primary">
+                0810-555-7376
+              </div>
+            </a>
+            <span style="font-size:0.9em;">
+              Resto del país.
+            </span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header style="font-weight: bold;">
+      Atención Presencial
+    </ion-card-header>
+    <ion-card-content style="padding: 0px 16px 16px;">
+      <div>
+        <span style="font-size: 1.1em;font-weight: 450;" ion-text color="primary">
+          Presencial
+        </span>
+      </div>
+      <div style="padding-top:5px">
+        El <strong>Centro Integral de Atención al Contribuyente</strong> (CIAC) atiende al público en la
+        Av Juan Pujol N° 2330- Provincia de Corrientes- de <strong>Lunes a Viernes de 07:30 a 18:00 Hs</strong>.
+      </div>
+      <div style="padding-top:5px">
+        En las <strong><a class="linkinterno" target="_blank">Receptorías del Interior</a></strong> de la
+        Provincia, el <strong>horario de atención es de 07:00 a 13:00 hs</strong>.&nbsp;
+      </div>
+      <div style="padding-top:5px">
+        En la <strong>Delegación de Capital Federal</strong>, el <strong>horario es de 10:00 a 15:00 hs</strong>.
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header style="font-weight: bold;">
+      Redes Sociales
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row>
+        <div>
+          <a href="https://www.instagram.com/dgrcorrientes/" style="text-decoration: none;">
+            <img src="./assets/iconos/instagram.png" style="width : 50px ; height : 50px">
+          </a>
+        </div>
+        <div style="margin: 0px 10px;">
+          <a href="https://www.facebook.com/DGRCorrientes" style="text-decoration: none;">
+            <img src="./assets/iconos/facebook.png" style="width : 50px ; height : 50px">
+          </a>
+        </div>
+        <div>
+          <a (click)="whatsapp()" style="text-decoration: none;cursor: pointer;">
+            <img src="./assets/iconos/wsp.png" style="width : 50px ; height : 50px">
+          </a>
+        </div>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<div id="footerMenuDgr">
+</div>

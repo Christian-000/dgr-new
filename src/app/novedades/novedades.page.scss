@@ -1,0 +1,21 @@
+page-novedades {
+    #boxFecha {
+        color: #0574B9;
+        // background-image: url(../assets/iconos/calendar_novedades.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40px;
+        padding-right: 5px;
+        padding-left: 5px;
+        height: 45px;
+        text-align: center;
+        /* border-radius: 100%; */
+        font-weight: 400;
+        /* color: #FFF; */
+        font-size: 1.2em;
+        line-height: 1;
+        white-space: nowrap;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}

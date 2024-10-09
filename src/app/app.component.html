@@ -18,7 +18,8 @@
       <ng-template #sinHeaderUsuario>
         <ion-header>
           <ion-toolbar>
-            <ion-title color="light" id="titleMenu">Menú</ion-title>
+
+            <ion-title color="dark" id="titleMenu">Menú</ion-title>
           </ion-toolbar>
         </ion-header>
       </ng-template>
@@ -34,10 +35,19 @@
         </ion-list>
       </ion-content>
 
-      <ion-footer id="footerMenuDgr">
-      </ion-footer>
+      <ion-footer id="footerMenuDgr"></ion-footer>
     </ion-menu>
 
     <ion-router-outlet id="main-content"></ion-router-outlet>
   </ion-split-pane>
+
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="closeMenu()">a</ion-button>
+      </ion-buttons>
+      <ion-title>DGR</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
 </ion-app>

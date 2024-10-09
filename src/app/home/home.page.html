@@ -27,3 +27,16 @@
     </ion-list>
   </ion-toolbar> -->
 </ion-header>
+
+<ion-content padding>
+  <ion-grid style="padding-bottom: 50px;">
+    <ion-row>
+      <ion-col col-6 *ngFor="let item of items" (click)="itemSelected(item)" style="text-align: center;">
+        <div id="boxsHome">
+          <img style="width:6.0em;" src="assets/iconos_new/{{item.icon}}">
+          <p style="font-size: 1.1em;font-weight: 450;">{{item.name}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

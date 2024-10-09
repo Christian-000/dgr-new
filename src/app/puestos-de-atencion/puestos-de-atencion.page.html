@@ -1,0 +1,107 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Puestos de Atención</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col>
+        <ion-icon name="navbar-icon-puestos" id="iconNavbar"></ion-icon>
+        <span id="textNavbar">Puestos de Atención</span>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list style="margin-top:5px;">
+    <ion-item button (click)="verMapa('-27.7498894','-57.6200353')">
+      Centro Integral de Atención al Contribuyente
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-27.7377873','-57.9199607')">
+      Receptoría Lomas de Vallejos
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-27.7505234','-57.6203026')">
+      Receptoría General Paz
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-27.551437','-57.5281175')">
+      Receptoría Berón de Astrada
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-27.4266602','-57.3356144')">
+      Receptoría Ita Ibaté
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-27.5867886','-56.690469')">
+      Receptoría Ituzaingó
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-27.9134355','-55.8230767')">
+      Receptoría Cologina Liebigs
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-28.0517063','-56.0196092')">
+      Receptoría Gobernador Virasoro
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-28.5491968','-56.0380983')">
+      Receptoría Santo Tomé
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-23.2774612','-57.3251581')">
+      Receptoría Loreto
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-28.2557569','-58.6248751')">
+      Receptoría Saladas
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('mailto:puestosdecontrol@dgrcorrientes.gov.ar')">
+      Puesto de Control Mocoretá
+      <ion-icon ios="ios-mail-outline" color="primary" md="md-mail" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('mailto:puestosdecontrol@dgrcorrientes.gov.ar')">
+      Puesto de Control Garruchos
+      <ion-icon ios="ios-mail-outline" color="primary" md="md-mail" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('mailto:puestosdecontrol@dgrcorrientes.gov.ar')">
+      Puesto de Control Tuna
+      <ion-icon ios="ios-mail-outline" color="primary" md="md-mail" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-27.3707559','-58.5116346')">
+      Receptoría San Cosme
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-27.3201589','-58.5718967')">
+      Receptoría Paso de la Patria
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-27.5081259','-58.5579586')">
+      Receptoría San Luís del Palmar
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-29.0983075','-56.5538444')">
+      Receptoría Alvear
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-29.1762068','-56.6414015')">
+      Receptoría La Cruz
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-29.4706247','-56.8158082')">
+      Receptoría Yapeyú
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item button (click)="verMapa('-29.7126137','-57.087323')">
+      Receptoría Paso de los Libres
+      <ion-icon ios="ios-pin-outline" color="primary" md="md-pin" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<div id="footerMenuDgr"></div>

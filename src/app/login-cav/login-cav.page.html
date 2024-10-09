@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login-cav</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p style="text-align: center;font-size: 1.2em;font-weight: 400;">
+    Ingrese sus datos para Comenzar
+  </p>
+
+  <form [formGroup]="formLogin" (ngSubmit)="loginData()">
+    <ion-list inset>
+      <ion-item>
+        <ion-label style="padding-left: 5px;">Usuario</ion-label>
+        <ion-input formControlName="user" type="tel" (keypress)="codeInput($event)" type="tel" value=""></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label style="padding-left: 5px;">Contraseña</ion-label>
+        <ion-input formControlName="password" type="{{passwordType}}" value=""></ion-input>
+        <div ion-button clear item-end (click)='showHide()' style="height:32px;">
+          <ion-icon name="{{passwordIcon}}" style="font-size:2.0em;"></ion-icon>
+        </div>
+      </ion-item>
+
+      <a style="text-decoration: none;" (click)='webTDR()'>
+        <div style="padding-top:20px;">
+          Si olvidó su Clave de Acceso Virtual o su cuenta está bloqueada ingrese aquí.
+        </div>
+      </a>
+    </ion-list>
+
+    <div padding>
+      <button color="green" class="btnGreenV1" ion-button block type="submit" [disabled]="!formLogin.valid">
+        Ingresar
+      </button>
+    </div>
+  </form>
+
+  <div id="footerMenuDgr">
+  </div>
+</ion-content>
